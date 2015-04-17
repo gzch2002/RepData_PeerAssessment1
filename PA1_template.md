@@ -36,6 +36,7 @@ library(ggplot2)
 Read the data to the data frame.
 
 ```r
+download.file("https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip", destfile="activity.zip", method="curl")
 unzip("activity.zip")
 activity<-read.csv("activity.csv")
 ```
